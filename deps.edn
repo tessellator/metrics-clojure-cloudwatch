@@ -1,0 +1,7 @@
+{:paths ["src"]
+
+ :deps {com.blacklocus/metrics-cloudwatch {:mvn/version "0.4.0"}
+        metrics-clojure                   {:mvn/version "2.10.0"}}
+
+ :aliases
+ {:dev {:extra-deps {org.clojure/clojure {:mvn/version "1.9.0"}}}}}
