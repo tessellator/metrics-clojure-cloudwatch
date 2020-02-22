@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>tessellator</groupId>
+  <artifactId>metrics-clojure-cloudwatch</artifactId>
+  <version>0.1.0</version>
+  <name>metrics-clojure-cloudwatch</name>
+  <description>A CloudWatch reporter for the metrics-clojure library</description>
+  <licenses>
+    <license>
+      <name>Eclipse Public License 2.0</name>
+      <url>https://www.eclipse.org/legal/epl-v20.html</url>
+    </license>
+  </licenses>
+  <scm>
+    <connection>scm:git:git://github.com/tessellator/metrics-clojure-cloudwatch.git</connection>
+    <developerConnection>scm:git:ssh://git@github.com/tessellator/metrics-clojure-cloudwatch.git</developerConnection>
+    <tag>471ee07660633bc34cd9abf7d1572fd9f003311f</tag>
+    <url>https://github.com/tessellator/metrics-clojure-cloudwatch</url>
+  </scm>
+  <dependencies>
+    <dependency>
+      <groupId>metrics-clojure</groupId>
+      <artifactId>metrics-clojure</artifactId>
+      <version>2.10.0</version>
+    </dependency>
+    <dependency>
+      <groupId>com.blacklocus</groupId>
+      <artifactId>metrics-cloudwatch</artifactId>
+      <version>0.4.0</version>
+    </dependency>
+  </dependencies>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+      </resource>
+    </resources>
+  </build>
+  <repositories>
+    <repository>
+      <id>clojars</id>
+      <url>https://repo.clojars.org/</url>
+    </repository>
+  </repositories>
+  <distributionManagement>
+    <repository>
+      <id>clojars</id>
+      <name>Clojars repository</name>
+      <url>https://clojars.org/repo</url>
+    </repository>
+  </distributionManagement>
+</project>
